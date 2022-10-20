@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ca735eed-577a-400e-9a88-597f97d883d4" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GOCQIm9rYbv7x9JzI17GCHPYn3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.4862069",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="no.zdata.torva.houseingloanapp.objects" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.LoanApplication">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.houseingloanapp.HelloApplication" />
+      <module name="HouseingLoanApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.houseingloanapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoanApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.zdata.torva.houseingloanapp.LoanApplication" />
+      <module name="HouseingLoanApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.zdata.torva.houseingloanapp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HouseingLoanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HouseingLoanApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.zdata.torva.houseingloanapp.objects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.zdata.torva.houseingloanapp.objects" />
+      <option name="MAIN_CLASS_NAME" value="no.zdata.torva.houseingloanapp.objects.HouseingLoanTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HouseingLoanTest.calculateMothlyBackpay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HouseingLoanApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.zdata.torva.houseingloanapp.objects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.zdata.torva.houseingloanapp.objects" />
+      <option name="MAIN_CLASS_NAME" value="no.zdata.torva.houseingloanapp.objects.HouseingLoanTest" />
+      <option name="METHOD_NAME" value="calculateMothlyBackpay" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HouseingLoanTest.calculation_3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HouseingLoanApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.zdata.torva.houseingloanapp.objects.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="no.zdata.torva.houseingloanapp.objects" />
+      <option name="MAIN_CLASS_NAME" value="no.zdata.torva.houseingloanapp.objects.HouseingLoanTest" />
+      <option name="METHOD_NAME" value="calculation_3" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LoanApplication" />
+        <item itemvalue="JUnit.HouseingLoanTest.calculation_3" />
+        <item itemvalue="JUnit.HouseingLoanTest" />
+        <item itemvalue="JUnit.HouseingLoanTest.calculateMothlyBackpay" />
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca735eed-577a-400e-9a88-597f97d883d4" name="Changes" comment="" />
+      <created>1666250228546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666250228546</updated>
+      <workItem from="1666250230059" duration="18493000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
