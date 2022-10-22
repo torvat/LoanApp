@@ -13,10 +13,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/no/zdata/torva/houseingloanapp/Controller.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -34,10 +37,17 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "create.test.in.the.same.root": "true",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "/home/torva/Nedlastinger/sqlite-jdbc-3.7.2.jar",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.4862069",
     "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -141,6 +151,11 @@
       <option name="presentableId" value="Default" />
       <updated>1666250228546</updated>
       <workItem from="1666250230059" duration="18493000" />
+      <workItem from="1666339166449" duration="541000" />
+      <workItem from="1666339965347" duration="9062000" />
+      <workItem from="1666355174835" duration="3264000" />
+      <workItem from="1666424338725" duration="5502000" />
+      <workItem from="1666430212652" duration="9385000" />
     </task>
     <servers />
   </component>
