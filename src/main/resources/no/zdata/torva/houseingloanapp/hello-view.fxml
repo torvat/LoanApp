@@ -18,4 +18,5 @@
     <Label fx:id="invalidDuration"/>
     <Button text="Calculate" onAction="#calculateButtonClick"/>
     <Label fx:id="output"/>
+    <Button text="Save" onAction="#saveToDatabase"/>
 </VBox>
