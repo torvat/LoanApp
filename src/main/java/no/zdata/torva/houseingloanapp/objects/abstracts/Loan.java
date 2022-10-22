@@ -1,10 +1,12 @@
 package no.zdata.torva.houseingloanapp.objects.abstracts;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public abstract class Loan {
 
     private int amount;
     private int duration;
-
+    private final int MONTHS = 12;
     public Loan() {
     }
 
@@ -31,6 +33,9 @@ public abstract class Loan {
             this.duration = duration;
         }
     }
+    public int getMONTHS(){
+        return this.MONTHS;
+    }
 
     public double calculateMothlyBackpay(){
         double periods = this.duration * 12;
@@ -38,5 +43,9 @@ public abstract class Loan {
         double intrest = installments * 3.5;
 
         return installments + (intrest * 3.5);
+    }
+    @Override
+    public String toString() {
+        return "Loan: " + "\nAmount: " + this.amount + "\nDuration: " + this.duration;
     }
 }
