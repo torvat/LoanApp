@@ -6,7 +6,9 @@ import java.sql.SQLException;
 
 public class Connect {
 
-    private static final String CONNECTION_STRING = "jdbc:sqlite:F:\\Dropbox\\Databases\\Loans\\loans.db";
+    //Fordi dropbox har litt forkjelling plassering på arbeidsmaskinene mine
+    private static final String CONNECTION_STRING = "jdbc:sqlite:C:\\Users\\Torva\\Dropbox\\Databases\\Loans\\loans.db";
+    private static final String CONNECTION_FROM_DESKTOP = "jdbc:sqlite:F:\\Dropbox\\Databases\\Loans\\loans.db";
 
     public static Connection connect(){
         try{
