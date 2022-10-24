@@ -1,13 +1,10 @@
-package no.zdata.torva.houseingloanapp;
+package no.zdata.torva.houseingloanapp.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import no.zdata.torva.houseingloanapp.database.Connect;
 import no.zdata.torva.houseingloanapp.objects.HouseingLoan;
-
-import no.zdata.torva.houseingloanapp.objects.lists.LoanList;
-
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -21,38 +18,27 @@ public class Controller {
     private TextField duration;
     @FXML
     private Label output;
-    @FXML
-    private Label invalidDuration;
 
     public void initialize() {
         amount.setMaxWidth(150);
         duration.setMaxWidth(150);
     }
-    protected void addValue() {
-
+    @FXML
+    protected void calculateButtonClick() {
+        output.setText("");
         try {
             int parsedDuration = Integer.parseInt(duration.getText());
             int parsedAmount = Integer.parseInt(amount.getText());
             if (parsedDuration <= 25) {
                 loan = new HouseingLoan(parsedAmount, parsedDuration);
+                output.setText("Monthly Payment: " + loan.printEstimate());
             } else {
-                invalidDuration.setText("The duration is not suitable for the amount");
+                output.setText("The duration is not suitable for the amount");
             }
         } catch (NumberFormatException e) {
-            System.out.println("Invalid Value");
-        }
-    }
-    @FXML
-    protected void calculateButtonClick() {
-        invalidDuration.setText("");
-        output.setText("");
-
-        try {
-            addValue();
-            Math.round(loan.calculateMothlyBackpay());
-            output.setText("Monthly Payment: " + loan.printEstimate());
-        } catch (NumberFormatException e) {
             output.setText("Invalid Value");
+        } catch (RuntimeException e) {
+            output.setText("Duration cannot be 0 or less");
         }
     }
     @FXML
@@ -70,16 +56,14 @@ public class Controller {
                 int parsedAmount = Integer.parseInt(amount.getText());
 
                 statement.executeUpdate("INSERT INTO loans(amount, duration, monthlypayment)VALUES (" +
-                        "'" + parsedAmount + "','" + parsedDuration + "'," + "'" + Math.round(loan.calculateMothlyBackpay()) + "')");
+                        "'" + parsedAmount + "','" + parsedDuration + "'," + "'" + Math.round(loan.calculateMonthlyPayment()) + "')");
 
                 System.out.println("Insert succsess");
 
                 statement.close();
                 con.close();
-            } catch (SQLException sql) {
+            } catch (SQLException | NumberFormatException sql) {
                 sql.printStackTrace();
-            } catch (NumberFormatException num) {
-                num.printStackTrace();
             }
         }
     }
