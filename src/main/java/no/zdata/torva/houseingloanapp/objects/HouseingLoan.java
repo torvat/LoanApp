@@ -9,35 +9,14 @@ public class HouseingLoan extends Loan {
     public HouseingLoan(int amount, int duration) {
         super(amount, duration);
     }
-
     @Override
-    public int getAmount(){
-        return super.getAmount();
-    }
-
-    @Override
-    public void setAmount(int amount){
-        super.setAmount(amount);
-    }
-
-    @Override
-    public int getDuration(){
-        return super.getDuration();
-    }
-    @Override
-    public void setDuration(int duration){
-        super.setDuration(duration);
-    }
-
-    @Override
-    public double calculateMothlyBackpay(){ //Renters rente er ikke tatt høyde for
-        double periods = getDuration() * super.getMONTHS();
-        double interest = INTREST/super.getMONTHS();
-
-        return getAmount()*((interest*(Math.pow(1 + interest, periods)))/(Math.pow(1 + interest, periods)-1));
+    public double calculateMonthlyPayment(){ //Renters rente er ikke tatt høyde for
+        double interest = INTREST/getMONTHS();
+        return super.calculate(((amount, periods) ->
+                amount * ((interest * Math.pow(1 + interest, periods)) / (Math.pow(1 + interest, periods) -1 ))));
     }
 
     public String printEstimate(){
-        return "" + calculateMothlyBackpay();
+        return "" + Math.round(calculateMonthlyPayment());
     }
 }
