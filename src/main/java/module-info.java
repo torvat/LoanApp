@@ -12,5 +12,6 @@ module no.zdata.torva.houseingloanapp {
     opens no.zdata.torva.houseingloanapp to javafx.fxml;
     exports no.zdata.torva.houseingloanapp;
     exports no.zdata.torva.houseingloanapp.objects;
-    exports no.zdata.torva.houseingloanapp.objects.lists;
+    exports no.zdata.torva.houseingloanapp.controller;
+    opens no.zdata.torva.houseingloanapp.controller to javafx.fxml;
 }
